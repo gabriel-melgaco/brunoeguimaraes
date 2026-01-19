@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="description" content="Bruno & Guimarães - Dupla Sertaneja de Taubaté e Região" />
+  <title>Bruno & Guimarães | Sertanejo</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <script src="https://kit.fontawesome.com/9cf3f4ac1c.js" crossorigin="anonymous"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="media/logo.png" alt="Bruno & Guimarães Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <span style="display: none; align-items: center; gap: 10px;">
+        <i class="lucide lucide-music"></i>
+        BRUNO & GUIMARÃES
+      </span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">A Dupla</a>
+      <a href="#tour">Shows</a>
+      <a href="#contact">Contato</a>
+      <button class="btn primary" id="unmutBtnNav">
+        <i class="lucide lucide-volume-x"></i>
+        Ouça Agora
+        <img src="media/sound.gif" class="sound" alt="sound icon">
+      </button>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <i class="lucide lucide-menu"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO COM VÍDEO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+    <source src="media/video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+  
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>BRUNO & GUIMARÃES</h1>
+    <h2>SERTANEJO</h2>
+    <p>Emocionando Taubaté e Região</p>
+
+    <div class="hero-buttons">
+      <button class="btn primary" id="unmutBtn">
+        <i class="lucide lucide-volume-x" id="volumeIcon"></i>
+        Ouça Agora
+        <img src="media/sound.gif" class="sound" alt="sound icon">
+      </button>
+      <a href="#tour" class="btn outline">Vem Conhecer</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>A Dupla</h2>
+
+  <div class="about-grid">
+    <img src="https://images.unsplash.com/photo-1734019411695-e4811bc162fb" alt="Bruno & Guimarães" loading="lazy">
+
+    <div>
+      <h3>Nossa História</h3>
+      <p>
+        Bruno e Guimarães se conheceram ainda na adolescência no interior de São Paulo,
+        unidos pela paixão pela música sertaneja.
+      </p>
+      <p>
+        Conquistam o Brasil com músicas que falam de amor, saudade e alegria.
+      </p>
+
+      <div class="stats">
+        <div><strong>60+</strong><span>Músicas</span></div>
+        <div><strong>50+</strong><span>Shows/Ano</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOUR CAROUSEL -->
+<section id="tour" class="tour">
+  <h2>Shows</h2>
+  <p>Vem curtir com a gente!</p>
+
+  <div class="carousel-container">
+    <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">
+      ‹
+    </button>
+
+    <div class="carousel" id="carousel">
+      <div class="carousel-slide">
+        <img src="media/folder_1.jpg" alt="Villa Country - São Paulo">
+        <div class="carousel-slide-info">
+          <h3>Villa Country</h3>
+          <p>📍 São Paulo - SP</p>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="media/folder_2.jpg" alt="Festa do Peão - Barretos">
+        <div class="carousel-slide-info">
+          <h3>Festa do Peão</h3>
+          <p>📍 Barretos - SP</p>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="media/folder_3.jpg" alt="Rodeio Show - Goiânia">
+        <div class="carousel-slide-info">
+          <h3>Rodeio Show</h3>
+          <p>📍 Goiânia - GO</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">
+      ›
+    </button>
+  </div>
+
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Nos Acompanhe pelo Instagram</h2>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/brunoeguimaraes.dupla?igsh=MXE1cm10cnQ2M2w5ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-square-instagram fa-2x"></i>
+    </a>
+  </div>
+
+  <div class="newsletter">
+    <h3>Fale Conosco!</h3>
+    <p>Entre em contato pelo WhatsApp para agendamentos de shows e conferir nossa agenda.</p>
+    <div>
+      <a class="whatsapp-btn" href="https://wa.me/5512981443566?text=Tenho%20interesse%20em%20agendar%20um%20show" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-square-whatsapp fa-beat fa-2x"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-info">
+    <p><strong>Shows:</strong> <i class="fa-brands fa-square-whatsapp"></i> (12) 98144-3566</p>
+  </div>
+</section>
+
+<!-- WhatsApp Flutuante -->
+<a class="whatsapp-float" href="https://wa.me/5512981443566?text=Tenho%20interesse%20em%20agendar%20um%20show" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp fa-2x"></i>
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <h3>BRUNO & GUIMARÃES</h3>
+  <p>Sertanejo</p>
+  <span>© 2026 - Todos os direitos reservados</span>
+  <span>/ Desenvolvido por: <a href="https://github.com/gabriel-melgaco" >_MEG_DEV_</a></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
